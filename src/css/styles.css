@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap');
 
+ul{
+  list-style-type: none;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -15,7 +18,7 @@
   justify-content: left;
   align-items: left;
   margin: 10%;
-  height: 6rem;
+  height: 10vh;
   width: 80vw;
   background-color: rgba(143, 213, 218, 0.699);
   box-shadow: 12px 12px 2px 1px rgba(87, 22, 42, 0.3);
