@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+}
+
+.searchForm{
+  height: 10%;
+  padding: 10%;
+  border-radius: 10px 10px;
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: left;
+  margin: 10%;
+  height: 6rem;
+  width: 80vw;
+  background-color: rgba(143, 213, 218, 0.699);
+  box-shadow: 12px 12px 2px 1px rgba(87, 22, 42, 0.3);
+}
+
+.stolen{
+  height: 10%;
+  padding: 5%;
+  margin-bottom: 10%;
+  border-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: right;
+  width: 80vw;
+  background-color: rgba(136, 137, 218, 0.699);
+  font-family: "Akshar";
+  font-size: 1.4rem;
+  box-shadow: 12px 12px 2px 1px rgba(87, 22, 42, 0.3);
+}
