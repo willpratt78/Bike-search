@@ -20,23 +20,39 @@ $(document).ready(function() {
         console.log(stolenBikeObj);
 
         stolenBikeObj.forEach(function(e){
-          let descriptionBlank = "nothing inputted";
-          let frameModelBlank = "nothing inputted";
+          let descriptionBlank = "";
+          let frameModelBlank = "";
           
           if (e.description === null && e.frame_model === null){
             eliminator(descriptionBlank, frameModelBlank);
           } else if (e.description === null && e.frame_model !== null) {
-            spaceChecker(e.frame_model)
+            // spaceChecker(e.frame_model)
             eliminator(descriptionBlank, e.frame_model);
           } else if (e.description !== null && e.frame_model === null){
-            spaceChecker(e.description)
+            // spaceChecker(e.description)
             eliminator(e.description && frameModelBlank);
           } else{
-            spaceChecker(e.description, e.frame_model)
+            // spaceChecker(e.description, e.frame_model)
             eliminator(e.description, e.frame_model);
           }
 
+          // descriptionBlank = "No description provided";
+          // frameModelBlank = "No frame model provided";
+          
+          // if (e.description === "" && e.frame_model === ""){
+          //   eliminator(descriptionBlank, frameModelBlank);
+          // } else if (e.description === "" && e.frame_model !== "") {
+          //   // spaceChecker(e.frame_model)
+          //   eliminator(descriptionBlank, e.frame_model);
+          // } else if (e.description !== "" && e.frame_model === ""){
+          //   // spaceChecker(e.description)
+          //   eliminator(e.description && frameModelBlank);
+          // } else{
+          //   // spaceChecker(e.description, e.frame_model)
+          //   eliminator(e.description, e.frame_model);
+          // }
         });
+
       });
   });
 
@@ -65,17 +81,17 @@ function eliminator(description, frameModel){
   `);
 }
 
-function spaceChecker(description, frameModel) {
-  let description1 = description.replace(/\s/g, '');
-  let frameModel1 = frameModel.replace(/\s/g, '');
+// function spaceChecker(description, frameModel) {
+//   let description1 = description.replace(/\s/g, '');
+//   let frameModel1 = frameModel.replace(/\s/g, '');
 
-  if(description1 === "") {
-    description = null
-  }
-  if(frameModel1 === "") {
-    frameModel = null
-  } 
-}
+//   if(description1 === "") {
+//     description = null
+//   }
+//   if(frameModel1 === "") {
+//     frameModel = null
+//   } 
+// }
 
 
 
